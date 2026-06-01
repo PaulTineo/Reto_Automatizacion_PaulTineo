@@ -1,0 +1,12 @@
+Se valida la compra de dos productos en la pagina demoblaze
+
+Conclusiones:
+
+WEB:
+1. Se debe tener en cuenta que la informacion del comprador no debe estar en el codigo por ser data sensible, se recomienda usar variables de entorno para almacenar esta informacion y asi evitar que terceros puedan acceder a ella.
+2. Se debe considerar el tiempo de espera para que los elementos de la pagina carguen, esto se puede hacer usando comandos como "waitForSelector" o "waitForNavigation" para asegurarse de que los elementos estén disponibles antes de interactuar con ellos, o usando esperas explicitas.
+3. El patron de diseño Page Object Model es una buena practica para organizar el codigo y hacerlo mas legible y mantenible, ya que permite separar la logica de la pagina de las pruebas, lo que facilita la reutilizacion del codigo y la gestion de cambios en la interfaz de usuario.
+
+API:
+1. Se debe tener en cuenta que como es una api publica, no se esta considerando la autenticacion, lo que puede ser un riesgo de seguridad, lo cual no se esta manejando data sensible
+2. Se debe considerar los escenarios de error, como por ejemplo, que la api no este disponible o que se reciban respuestas inesperadas.
